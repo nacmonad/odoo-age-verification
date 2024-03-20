@@ -10,7 +10,7 @@
     ],
     'assets': {
         'web.assets_frontend': [
-            '/age_verification/static/src/js/age_verification.js',
+            'static/src/js/age_verification.js',
         ],
     },
 }
