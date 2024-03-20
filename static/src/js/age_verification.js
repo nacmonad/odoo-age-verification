@@ -1,8 +1,8 @@
-odoo.define('age_verification.popup', function(require) {
+var publicWidget = require('web.public.widget');
+
+odoo.define('age_verification.popup', [publicWidget], function(require) {
     'use strict';
-    
-    var publicWidget = require('web.public.widget');
-    
+
     publicWidget.registry.AgeVerificationPopup = publicWidget.Widget.extend({
         selector: ':not([data-age-verified])',
         start: function() {
@@ -13,6 +13,4 @@ odoo.define('age_verification.popup', function(require) {
             return this._super.apply(this, arguments);
         },
     });
-    
-    });
-    
+});
