@@ -1,4 +1,4 @@
-odoo.define('age_verification.popup', ['web.public.widget'], function(require) {
+odoo.define('age_verification.popup', ['web'], function(require) {
     'use strict';
 
     console.log("[age_verification]hello world")
