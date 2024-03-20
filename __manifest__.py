@@ -4,7 +4,7 @@
     'version': '1.0',
     'category': 'Website',
     'summary': 'Age Verification for Website',
-    'depends': ['website'],
+    'depends': ['website','web'],
     'data': [
         'views/template.xml',
     ],
