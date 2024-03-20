@@ -6,8 +6,8 @@
     'summary': 'Age Verification for Website',
     'depends': ['website','web', 'website_sale'],
     'data': [
-        'odoo_age_verification/views/age_verification.xml',
-        'odoo_age_verification/views/template.xml',
+        'views/age_verification.xml',
+        'views/template.xml',
 
     ],
     'assets': {
