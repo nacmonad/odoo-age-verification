@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <template id="products_item" name="Products item">
+    <template id="products_item_custom" name="Products item (Custom)" inherit_id="website_sale.products_item">
         
         <form action="/shop/cart/update" method="post" class="oe_product_cart h-100 d-flex"
             t-att-data-publish="product.website_published and 'on' or 'off'"
