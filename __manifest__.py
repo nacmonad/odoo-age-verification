@@ -10,7 +10,7 @@
     ],
     'assets': {
         'web.assets_frontend': [
-            'static/src/js/age_verification.js',
+            '/odoo_age_verification/static/src/js/age_verification.js',
         ],
     },
 }
