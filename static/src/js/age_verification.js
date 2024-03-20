@@ -12,30 +12,24 @@ odoo.define('age_verification.popup', [], function(require) {
         $('body').prepend(`
             <div id="age-verification-popup" style="position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9999;display:flex;justify-content:center;align-items:center;">
                 <div style="background:#fff;padding:20px;max-width:400px;text-align:center;">
-                    <p>You must be over the age of 19 to enter this site.</p>
-                    <button id="age-verification-confirm">I am over 19</button>
+                    <p>Confirm you are over the age of 19 to enter this site.</p>
+                    <div style="display:flex;flex-direction:row;justify-content:space-around;">
+                        <button id="age-verification-yes" class="btn btn-primary btn_cta w-100 w-100 w-100 w-100 w-100 w-100 w-100">Yes</button>
+                        <button id="age-verification-no" class="btn btn-primary btn_cta w-100 w-100 w-100 w-100 w-100 w-100 w-100">No/button>
+                    </div>
                 </div>
             </div>
         `);
 
-        $('#age-verification-confirm').click(function() {
+        $('#age-verification-confirm-yes').click(function() {
             localStorage.setItem('isAgeVerified', 'true');
             $('#age-verification-popup').hide();
         });
+        $('#age-verification-confirm-no').click(function() {
+            localStorage.setItem('isAgeVerified', '');
+            $('#age-verification-popup').hide();
+            //redirect to https://disney.com
+            window.location.href = 'https://disney.com';
+        });
         }
     });
-
-    // var publicWidget = require('web.public.widget');
-    // var widgetRegistry = require('web.widget_registry');
-    // console.log({ publicWidget, widgetRegistry });
-    // publicWidget.registry.AgeVerificationPopup = publicWidget.Widget.extend({
-    //     selector: ':not([data-age-verified])',
-    //     start: function() {
-    //         if (!localStorage.getItem('isAgeVerified')) {
-    //             alert('Hello World! Verify your age.');
-    //             localStorage.setItem('isAgeVerified', 'true');
-    //         }
-    //         return this._super.apply(this, arguments);
-    //     },
-    // });
-//});
