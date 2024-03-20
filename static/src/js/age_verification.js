@@ -21,11 +21,11 @@ odoo.define('age_verification.popup', [], function(require) {
             </div>
         `);
 
-        $('age-verification-yes').click(function() {
+        $('#age-verification-yes').click(function() {
             localStorage.setItem('isAgeVerified', 'true');
             $('#age-verification-popup').hide();
         });
-        $('age-verification-no').click(function() {
+        $('#age-verification-no').click(function() {
             localStorage.setItem('isAgeVerified', '');
             $('#age-verification-popup').hide();
             //redirect to https://disney.com
