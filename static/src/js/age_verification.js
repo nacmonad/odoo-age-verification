@@ -14,8 +14,8 @@ odoo.define('age_verification.popup', [], function(require) {
                 <div style="background:#fff;padding:20px;max-width:400px;text-align:center;">
                     <p>Confirm you are over the age of 19 to enter this site.</p>
                     <div style="display:flex;flex-direction:row;justify-content:space-around;">
-                        <button id="age-verification-yes" class="btn btn-primary btn_cta w-100 w-100 w-100 w-100 w-100 w-100 w-100">Yes</button>
-                        <button id="age-verification-no" class="btn btn-primary btn_cta w-100 w-100 w-100 w-100 w-100 w-100 w-100">No/button>
+                        <button id="age-verification-yes" class="btn btn-primary btn_cta mx-2 w-100 w-100 w-100 w-100 w-100 w-100 w-100">Yes</button>
+                        <button id="age-verification-no" class="btn btn-primary btn_cta mx-2 w-100 w-100 w-100 w-100 w-100 w-100 w-100">No</button>
                     </div>
                 </div>
             </div>
