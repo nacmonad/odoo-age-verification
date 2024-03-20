@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <template id="products_item" name="Products item (Customized)">
+    <template id="products_item" name="Products item">
+        <span style="display:none;">Hidden!</span>
         <form action="/shop/cart/update" method="post" class="oe_product_cart h-100 d-flex"
             t-att-data-publish="product.website_published and 'on' or 'off'"
             itemscope="itemscope" itemtype="http://schema.org/Product">
