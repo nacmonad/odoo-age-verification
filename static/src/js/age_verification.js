@@ -5,7 +5,7 @@ odoo.define('age_verification.popup', [], function(require) {
 
 
     if (!localStorage.getItem('isAgeVerified')) {
-        alert('Hello World! Verify your age.');
+        alert('By clicking Ok, you are verifying you are over the age of 19.');
         localStorage.setItem('isAgeVerified', 'true');
     }
 
