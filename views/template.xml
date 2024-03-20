@@ -1,3 +1,13 @@
-<xml:5>
-    Hello Template
-</xml:5>
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Example of a basic QWeb view, adjust or replace with your actual data -->
+        <template id="age_verification_example_template" name="Age Verification Example">
+            <t t-name="age_verification.example_template">
+                <div>
+                    <p>Hello World! This is a basic example template for age verification.</p>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>
