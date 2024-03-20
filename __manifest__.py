@@ -6,7 +6,7 @@
     'summary': 'Age Verification for Website',
     'depends': ['website','web'],
     'data': [
-        'views/template.xml',
+        'views/age_verification.xml',
     ],
     'assets': {
         'web.assets_frontend': [
