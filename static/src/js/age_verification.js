@@ -4,8 +4,8 @@ odoo.define('age_verification.popup', [], function(require) {
     // How to fix dependency injection issue ?
     // var core = require('web.core');
     // var QWeb = core.qweb;
-
-    const isAgeVerified = localStorage.getItem('isAgeVerified');
+    $(document).ready(()=>{
+        const isAgeVerified = localStorage.getItem('isAgeVerified');
     console.log("[age_verification]isAgeVerified", isAgeVerified);
 
     if (!isAgeVerified || isAgeVerified == "false" || isAgeVerified == "") {
@@ -32,4 +32,6 @@ odoo.define('age_verification.popup', [], function(require) {
             window.location.href = 'https://disney.com';
         });
         }
+    })
+    
     });
