@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <template id="products_item_custom" inherit_id="website_sale.products_item">
-        <xpath expr="//span[1]" position="replace">
+        <xpath expr="//span[1]" position="after">
             <span>Custom Content Here</span>
         </xpath>
     </template>
